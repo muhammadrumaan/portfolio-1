@@ -9,6 +9,11 @@ hamburger.addEventListener('click',  () => {
 navlinks.addEventListener('click', () =>{
   navlist.classList.remove('nav-links-active');
 });
+let sectionmain = document.getElementsByClassName('section')[0];
+sectionmain.addEventListener('click', function (element) {
+  navlist.classList.remove('nav-links-active');
+  console.log(element);
+});
 
 
 console.log(2+3);
